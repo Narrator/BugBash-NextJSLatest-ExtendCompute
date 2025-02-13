@@ -4,6 +4,7 @@ frontend:
     preBuild:
       commands:
         - export PATH="$PATH:$(pwd)/flutter/bin"
+        - echo $PATH
         - npm install
         - ./patch-next.sh
     build:
